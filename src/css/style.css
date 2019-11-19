@@ -8,7 +8,9 @@ body {
   color: #666;
   background-color: #ffffff;
 }
-
+p,span,strong{
+  color: #fff;
+}
 h1,
 h2,
 h3,
@@ -87,6 +89,16 @@ object {
 
 .container {
   padding: 0 20px 0 20px;
+  
+}
+.container-home{
+  width:250px;
+    height:250px;
+    margin:20px auto 0 auto;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .row .row,
@@ -129,6 +141,7 @@ section.dark .heading h3 {
 .sub-heading {
   text-align: center;
   margin: 20px 0 20px 0;
+  color: #fff;
 }
 
 .sub-heading p {
@@ -145,18 +158,9 @@ section.dark .sub-heading p {
 
 /* --- menu --- */
 
-.navigation {
-  margin: 30px 0 0;
-}
 
-.navbar {
-  padding: 0 0 20px;
-  margin: 0;
-}
 
-.navbar .nav {
-  margin: 0 0 0 0;
-}
+
 
 .navbar .nav > li > a {
   float: none;
@@ -169,40 +173,7 @@ section.dark .sub-heading p {
   font-weight: bold;
 }
 
-.navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover {
-  text-decoration: none;
-  color: #fff;
-  background-color: transparent;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
 
-.navbar .nav > .current {
-  color: #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.navbar .nav > .current a:focus,
-.navbar .nav > .current a:hover {
-  color: #fff;
-}
-
-.navbar .nav li.dropdown > a:hover .caret {
-  text-shadow: none;
-}
-
-.navbar .nav li.dropdown a {
-  margin-top: -2px;
-}
 
 .navbar .nav li.dropdown.current a {
   padding-right: 5px;
@@ -214,13 +185,16 @@ section.dark .sub-heading p {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
-
-.dropdown-menu li > a:hover,
-.dropdown-menu li > a:focus,
-.dropdown-submenu:hover > a {
-  color: #ffffff;
-  text-shadow: none;
-  text-decoration: none;
+.card {
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  background: #444;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #eee;
+  text-align: center;
+  padding-top: 50px;
+  
 }
 
 ul.nav li ul.dropdown-menu {
@@ -246,6 +220,149 @@ ul.nav li ul.dropdown-menu {
   padding: 20px;
   text-align: center;
 } 
+
+section#intro {
+  background: #000 url("./../img/reacts.png") 50%  no-repeat;
+	height:1000px;
+  padding:240px 0 120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.react-logo{
+  display: inline-block;
+  border-radius:50%;
+  border:10px solid #00d8ff;
+
+  animation-name:rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+.react-logo , .react-logo:before , .react-logo:after{
+  position:absolute;
+  display: inline-block;
+  width:200px;
+  height:70px;
+  border-radius:50%;
+  border:10px solid #00d8ff;
+}
+
+.nucleo , .react-logo , .react-logo:before , .react-logo:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nucleo{
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  background:#00d8ff;
+}
+
+.react-logo:before , .react-logo:after{
+  content:"";
+}
+
+.react-logo:after{
+  transform:rotate(-57deg);
+}
+
+.react-logo:before{
+  transform:rotate(57deg);
+}
+
+.title{
+font-size:60px;
+background:#222;
+color:#00d8ff;
+width:250px;
+margin:2px auto;
+text-align:center;
+}
+
+@keyframes rotate{
+
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+polygon {
+  mix-blend-mode: multiply;
+   align-items: center;
+    display: flex;
+  height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+.slogan h1 span {
+	color: red;
+}
+
+
+@media (min-width: 1024px) {
+	section#intro {
+		background-attachment: fixed;
+	}
+}
+
+section#intro.inner {
+	padding:140px 0 30px;
+}
+
+section#intro.inner h2 strong  {
+	color:#fff;
+}
+section#intro.inner h2  {
+	font-size:32px;
+}
+
+
+section#intro  {
+	text-align:center;
+}
+
+section#intro i  {
+	margin-left:0;
+	text-align:center;
+}
+
+section#intro h1  {
+	color:#fff;
+	font-size:64px;
+	font-weight:700;
+}
+section#intro h2  {
+	color:#ddd;
+	font-size:24px;
+}
+
+/* === slogan === */
+.slogan i {
+	color:#fff;
+}
+
+
+section#intro .inner-heading h2 {
+	margin-bottom:-20px;
+}
+
+section#intro h4.subtitle  {
+	font-family: Arial, Tahoma, Verdana, Sans-serif;
+	text-transform:none;
+	color:#f8f8f8;
+}
+
+section#intro p  {
+	color:#f8f8f8;
+}
+
+
+/* ==== general main content style ==== */
 .bg-image {
   /* The image used */
   background-image: url("./../img/kak.jpg");  

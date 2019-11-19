@@ -57,7 +57,6 @@ nav{
     background-color: #61DAFB;
     position: absolute;
     transition: all ease-in-out 250ms;
-    margin: 0 0 0 10%;
 }
 .nav-links li a:hover::before{
     width: 80%;

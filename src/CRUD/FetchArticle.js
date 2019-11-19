@@ -45,7 +45,6 @@ class FetchArticle extends Component {
   };
 
   render() {
-    console.log(this.props.fetchArticle());
 
     return (
       <div>

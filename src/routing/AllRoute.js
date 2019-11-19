@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import Home from "./../menuPage/Home";
 import About from "./../menuPage/About";
+import ViewDetail from "./../CRUD/ViewDetail"
 import PrivateRoute from "./../Auth/PrivateRoute";
 import AdminPage from "./../menuPage/AdminPage";
 import "./../css/navbar.css";
@@ -44,7 +45,7 @@ function AllRoute() {
           <Route path="/about" children={<About />} />
           <PrivateRoute path="/admin" children={<AdminPage />}></PrivateRoute>
           <Route path="/login" children={<LoginPage/>}></Route>
-          {/* <Route path="/detail/:id" children={<ViewDetail></ViewDetail>} /> */}
+          <Route path="/detail/:id" children={<ViewDetail></ViewDetail>} />
           {/* <Route children={<Error />} /> */}
         </Switch>
       </Router>

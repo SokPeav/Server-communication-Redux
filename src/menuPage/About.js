@@ -5,15 +5,14 @@ import sovann from "../img/sovann.jpg";
 import metra from "../img/metra.jpg";
 import peav from "../img/Cool.jpg";
 import dora from "../img/dora.jpg";
-import kak from '../img/kak.jpg'
+import kak from "../img/kak.jpg";
 import "./../css/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 export default function About() {
   return (
-    <div >
-      <section id="about" class="section ">
+    <div>
+      <section id="about" class="section" style={{ background: "#000" }}>
         <div class="container">
           <div class="row">
             <div class="span12">
@@ -23,9 +22,11 @@ export default function About() {
                 </h3>
               </div>
               <div class="sub-heading">
-                <p>
-                  We are the amazing <strong>React Major</strong> team in Korea
-                  Software HRD Center (7th) With an amazing member such as :
+                <p style={{ color: "#fff" }}>
+                  We are the amazing{" "}
+                  <strong style={{ color: "red" }}>React Major</strong> team in
+                  Korea Software HRD Center (7th) With an amazing member such as
+                  :
                 </p>
               </div>
             </div>
